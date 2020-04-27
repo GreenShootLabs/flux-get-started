@@ -43,14 +43,6 @@ spec:
         env:
         - name: PODINFO_UI_COLOR
           value: "#34577c"
-        livenessProbe:
-          httpGet:
-            path: /healthz
-            port: 9898
-        readinessProbe:
-          httpGet:
-            path: /readyz
-            port: 9898
         resources:
           limits:
             cpu: 1000m
